@@ -6,7 +6,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class TelegramBotSender extends Bundle
 {
-    public function sendSimpleMessage($token, $chatId, $text)
+    public function sendSimpleMessage(string $token, int $chatId, string $text): string
     {
         $getQuery = array(
             "chat_id" 	=> $chatId,
