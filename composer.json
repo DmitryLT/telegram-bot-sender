@@ -1,0 +1,22 @@
+{
+  "name": "ltdsh/telegram-bot-sender",
+  "type": "symfony-bundle",
+  "description": "Simple class for sendinf messages with telegram bot",
+  "keywords": ["php", "symfony", "reusable bundle", "sender", "telegram", "message"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dmitrii Shametun",
+      "email": "dshametun@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": { "Kjonski\\HowToBundle\\": "src/" }
+  },
+  "require": {
+    "symfony/dependency-injection": "^6.3"
+  },
+  "require-dev": {
+    "symfony/http-kernel": "^6.3"
+  }
+}
