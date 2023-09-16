@@ -6,11 +6,11 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class TelegramBotSender extends Bundle
 {
-    public function sendSimpleMessage($token, $chatId)
+    public function sendSimpleMessage($token, $chatId, $text)
     {
         $getQuery = array(
             "chat_id" 	=> $chatId,
-            "text"  	=> "Новое сообщение из формы бандла",
+            "text"  	=> $text,
             "parse_mode" => "html",
         );
         $ch = curl_init("https://api.telegram.org/bot". $token ."/sendMessage?" . http_build_query($getQuery));
